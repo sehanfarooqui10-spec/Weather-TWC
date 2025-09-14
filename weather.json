@@ -1,10 +1,10 @@
 {
   "location": "Karachi",
-  "updated_at": "2025-09-14 19:09:55",
+  "updated_at": "2025-09-14 19:21:02",
   "forecast": [
     {
       "time": "2025-09-15T01:00:00+0500",
-      "temperature": 27,
+      "temperature": 28,
       "feels_like": 32,
       "precipitation_chance": 3
     },
@@ -24,13 +24,13 @@
       "time": "2025-09-15T04:00:00+0500",
       "temperature": 28,
       "feels_like": 32,
-      "precipitation_chance": 4
+      "precipitation_chance": 2
     },
     {
       "time": "2025-09-15T05:00:00+0500",
       "temperature": 28,
       "feels_like": 32,
-      "precipitation_chance": 4
+      "precipitation_chance": 2
     },
     {
       "time": "2025-09-15T06:00:00+0500",
@@ -42,7 +42,7 @@
       "time": "2025-09-15T07:00:00+0500",
       "temperature": 28,
       "feels_like": 32,
-      "precipitation_chance": 4
+      "precipitation_chance": 3
     },
     {
       "time": "2025-09-15T08:00:00+0500",
