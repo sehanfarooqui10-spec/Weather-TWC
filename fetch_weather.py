@@ -45,8 +45,8 @@ def process_daily_summary(data):
             "date": date,
             "min_temp": min(temps_list),
             "max_temp": max(temps_list),
-            "avg_feels_like": round(sum(feels_list)/len(feels_list), 1) if feels_list else None,
-            "total_precip_chance": sum(precip_list) if precip_list else 0,
+            "avg_feels_like": round(mean(feels_list), 1) if feels_list else None,
+            "total_precip_chance": mean(precip_list) if precip_list else 0,
         #    "most_common_description": Counter(desc_list).most_common(1)[0][0] if desc_list else ""
         })
 
