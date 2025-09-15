@@ -3,6 +3,7 @@ import os
 import json
 from datetime import datetime
 from collections import defaultdict, Counter
+import numpy as np 
 
 API_KEY = os.getenv("TWC_API_KEY")
 
@@ -45,8 +46,8 @@ def process_daily_summary(data):
             "date": date,
             "min_temp": min(temps_list),
             "max_temp": max(temps_list),
-            "avg_feels_like": round(mean(feels_list), 1) if feels_list else None,
-            "total_precip_chance": mean(precip_list) if precip_list else 0,
+            "avg_feels_like": round(np.mean(temps_list), 1) if feels_list else None,
+            "total_precip_chance": round(np.mean(precip_list),1) if precip_list else 0,
         #    "most_common_description": Counter(desc_list).most_common(1)[0][0] if desc_list else ""
         })
 
