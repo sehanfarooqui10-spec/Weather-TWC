@@ -4,6 +4,7 @@ import json
 from datetime import datetime
 from collections import defaultdict, Counter
 import numpy as np 
+from zoneinfo import ZoneInfo
 
 API_KEY = os.getenv("TWC_API_KEY")
 
@@ -115,7 +116,7 @@ def save_html(location, updated_at, summary):
 
 def main():
     location = "Karachi"
-    updated_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    updated_at = datetime.now(ZoneInfo("Asia/Karachi")).strftime("%Y-%m-%d %H:%M:%S")
 
     data = fetch_weather_data()
     summary = process_daily_summary(data)
